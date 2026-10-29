@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+
 from interface.api.v1 import contacts
 
 app = FastAPI(title="Clean Architecture API")

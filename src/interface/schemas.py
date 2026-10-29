@@ -1,8 +1,7 @@
 
+# interface/schemas.py
 
 from pydantic import BaseModel, Field
-
-from domain.contacts.entities import Contact
 
 
 class SaveContactRequest(BaseModel):

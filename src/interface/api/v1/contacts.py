@@ -1,7 +1,6 @@
-# api/routes.py
+# interface/api/v1/contacts.py
+from fastapi import APIRouter, Depends, HTTPException, status
 
-from fastapi import Depends, FastAPI, HTTPException, status
-from fastapi import APIRouter, Depends, status
 from application.contacts.create_contact_use_case import CreateContactUseCase
 from application.contacts.list_contacts_use_case import ListContactsUseCase
 from domain.contacts.exceptions import ContactExistException
@@ -19,7 +18,7 @@ async def save(
     payload: SaveContactRequest,
     create_use_case: CreateContactUseCase = Depends(get_create_contact_use_case),
     list_contacts_use_case: ListContactsUseCase = Depends(get_list_contacts_use_case),
-) :
+):
     try:
         await create_use_case.execute(payload.mobile, payload.name)
         return await list_contacts_use_case.execute()

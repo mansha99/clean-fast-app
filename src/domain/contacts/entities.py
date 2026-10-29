@@ -1,4 +1,4 @@
-# domain/entities.py
+# domain/contacts/entities.py
 from dataclasses import dataclass
 
 
@@ -7,4 +7,3 @@ class Contact:
     id: str | None
     name: str
     mobile: str
-

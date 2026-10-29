@@ -1,4 +1,4 @@
-# use_cases/authenticate_contact.py
+# application/contacts/list_contacts_use_case.py
 
 from domain.contacts.entities import Contact
 from domain.contacts.ports import ContactRepositoryPort

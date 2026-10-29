@@ -1,16 +1,18 @@
-# infrastructure/repositories.py
+# infrastructure/contacts/repositories.py
 
+from collections.abc import AsyncGenerator
+
+from fastapi import Depends
 from sqlmodel import select
 
 # from sqlalchemy.ext.asyncio import AsyncSession
 from sqlmodel.ext.asyncio.session import AsyncSession
-from collections.abc import AsyncGenerator
 
 from domain.contacts.entities import Contact
 from domain.contacts.ports import ContactRepositoryPort
 from infrastructure.contacts.models import ContactModel
 from infrastructure.shared.database import get_session
-from fastapi import Depends
+
 
 class SqlModelContactRepository(ContactRepositoryPort):
     def __init__(self, session: AsyncSession):

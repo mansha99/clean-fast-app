@@ -1,4 +1,4 @@
-# domain/interfaces.py
+# domain/contacts/ports.py
 from abc import ABC, abstractmethod
 
 from domain.contacts.entities import Contact

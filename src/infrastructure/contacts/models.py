@@ -1,4 +1,4 @@
-# infrastructure/models.py
+# infrastructure/contacts/models.py
 from sqlmodel import Field, SQLModel
 
 
