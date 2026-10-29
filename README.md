@@ -25,5 +25,5 @@ Now open `http://127.0.0.1:8000/docs` and test following endpoints
 - POST   /api/v1/contacts       to list all the contacts
 
 # Optional
-ruff check          analyze code to find bugs, style errors, and code quality issues
-ruff check --fix    analyze and fix
+- ruff check          analyze code to find bugs, style errors, and code quality issues
+- ruff check --fix    analyze and fix
