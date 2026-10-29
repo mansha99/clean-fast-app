@@ -1,0 +1,18 @@
+# Ignore all __pycache__ directories recursively
+**/__pycache__/
+
+# Optionally, ignore any compiled Python files just in case
+*.pyc
+*.pyo
+*.pyd
+
+.env
+
+.deepeval
+.ruff_cache
+.venv
+*.egg-info/
+
+*.egg-info/
+.pytest_cache/ 
+__pycache__/
